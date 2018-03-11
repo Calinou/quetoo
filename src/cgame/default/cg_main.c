@@ -219,6 +219,8 @@ static void Cg_Init(void) {
 	                         "Your preferred hook style. Can be either \"pull\" or \"swing\".");
 
 	cg_particle_quality = cgi.AddCvar("cg_particle_quality", "1", CVAR_ARCHIVE, "Particle quality. 0 disables most eyecandy particles, 1 enables all.");
+	cg_particle_blood = cgi.AddCvar("cg_particle_blood", "2", CVAR_ARCHIVE,
+											"Amount of blood particles. 2 enables all blood effects, 1 decreases blood effects, 0 disables all blood effects.");
 
 	cg_predict = cgi.AddCvar("cg_predict", "1", 0, "Use client side movement prediction");
 

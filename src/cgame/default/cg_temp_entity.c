@@ -207,6 +207,10 @@ static void Cg_BulletEffect(const vec3_t org, const vec3_t dir) {
  */
 static void Cg_BloodEffect(const vec3_t org, const vec3_t dir, int32_t count) {
 
+	if (cg_particle_blood->integer == 0) {
+		return;
+	}
+
 	for (int32_t i = 0; i < count; i++) {
 		cg_particle_t *p;
 
